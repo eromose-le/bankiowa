@@ -1,0 +1,1 @@
+KJE.parameters.set("COMPOUND_INTEREST",KJE.CertDepositCalc.COMPOUND_ANNUALLY),KJE.parameters.set("STARTING_AMOUNT",1e3),KJE.parameters.set("MONTHS",60),KJE.parameters.set("RATE_OF_RETURN",KJE.Default.RORSave),KJE.parameters.set("MIN_STARTING_AMOUNT",0),KJE.parameters.set("TOTAL_YIELD_HIDE",!0),KJE.parameters.set("TOTAL_YIELD2_HIDE",!0),KJE.IE7and8&&KJE.init();

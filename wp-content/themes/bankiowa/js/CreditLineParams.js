@@ -1,0 +1,1 @@
+KJE.parameters.set("APPRAISED_VALUE_OF_YOUR_HOME",15e4),KJE.parameters.set("LOAN_TO_VALUE_RATIO",80),KJE.parameters.set("MORTGAGES_YOU_OWE",11e4),KJE.IE7and8&&KJE.init();
