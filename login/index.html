@@ -25,11 +25,35 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="stylesheet" type="text/css" href="../loader/css/style.css">
 <!--===============================================================================================-->
 </head>
 <body>
+
+	<div class="loader-wrapper">
+		<div class="blobs">
+				<div class="blob-center"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+				<div class="blob"></div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+				<defs>
+				<filter id="goo">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+					<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+					<feBlend in="SourceGraphic" in2="goo" />
+					</filter>
+				</defs>
+			</svg>
+			<div class="quote">fetching your account details..</div>
+	</div>
 	
-	<div class="limiter">
+	<div class="limiter"> 
 		<div class="container-login100">
 			<div class="wrap-login100 p-l-85 p-r-85 p-t-55 p-b-55">
 				<form class="login100-form validate-form flex-sb flex-w">
@@ -80,10 +104,17 @@
 				</form>
 			</div>
 		</div>
-	</div>
+	</div> 
 	
 
 	<div id="dropDownSelect1"></div>
+
+<!-- ========================================================== -->
+	<script>
+		$(window).on("load",function(){
+			$(".loader-wrapper").fadeOut("slow");
+		});
+	</script>
 	
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
